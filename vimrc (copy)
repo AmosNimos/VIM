@@ -1,0 +1,12 @@
+set number
+set tabstop=4
+"set nowrap
+packloadall
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'DarkGray'
+"g:Goyo
+"Limelight
+:map \g :Goyo <bar> <CR>
