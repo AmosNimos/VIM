@@ -1,12 +1,29 @@
+" load pack
+packloadall
+
+" nnoremap
+nnoremap j gj
+nnoremap k gk
+nnoremap ; :
+
+" set
 set number
 set tabstop=4
 "set nowrap
-packloadall
+
+" Lime Light & Goyo setup
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
-
+"autocmd! User GoyoLeave & q
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'DarkGray'
-"g:Goyo
-"Limelight
 :map \g :Goyo <bar> <CR>
+Goyo
+
+" my custom key
+"https://vim.fandom.com/wiki/Unused_keys
+
+"save & quit
+:map  <C-@> :Goyo! <bar> wq <bar> <CR> 
+"quit no save
+:map  <C-K> :Goyo! <bar> q! <bar> <CR>
