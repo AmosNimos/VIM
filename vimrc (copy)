@@ -1,14 +1,20 @@
-" load pack
+" load pluggin from the pack folder
 packloadall
 
 " nnoremap
 nnoremap j gj
 nnoremap k gk
-nnoremap ; :
+nnoremap /g :Goyo<CR>
+
+" Spell map
+nnoremap sa zG
+nnoremap sc z= 
+nnoremap ss :set spell!<CR>
 
 " set
 set number
 set tabstop=4
+set spell spelllang=en_us
 "set nowrap
 
 " Lime Light & Goyo setup
@@ -20,7 +26,7 @@ let g:limelight_conceal_ctermfg = 'DarkGray'
 :map \g :Goyo <bar> <CR>
 Goyo
 
-" my custom key
+"my custom key
 "https://vim.fandom.com/wiki/Unused_keys
 
 "save & quit
